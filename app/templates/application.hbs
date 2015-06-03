@@ -1,0 +1,9 @@
+<h2 id="title">ember-cli-dom-stats-demo</h2>
+<h4>Simple demo demonstrating the <a href='https://www.npmjs.com/package/ember-cli-dom-stats' target='_blank'>ember-cli-dom-stats</a> addon for ember-cli</h4>
+
+<ul>
+{{#each fruit in fruitList}}
+  <li>{{ fruit }}&nbsp;&nbsp;<button {{ action 'removeItem' fruit }}>remove</button></li>
+{{/each}}
+</ul>
+{{ list-add choices=model.fruits addItem='addItem' }}
